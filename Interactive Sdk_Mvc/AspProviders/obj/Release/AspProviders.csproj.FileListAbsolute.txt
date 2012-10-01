@@ -1,0 +1,7 @@
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\AspProviders\bin\Release\AspProviders.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\AspProviders\bin\Release\AspProviders.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\AspProviders\bin\Release\Odp.Data.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\AspProviders\bin\Release\Odp.Data.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\AspProviders\obj\Release\ResolveAssemblyReference.cache
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\AspProviders\obj\Release\AspProviders.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\AspProviders\obj\Release\AspProviders.pdb

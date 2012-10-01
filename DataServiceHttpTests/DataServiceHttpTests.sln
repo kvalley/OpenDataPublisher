@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataServiceHttpUnitTests", "DataServiceHttpUnitTests\DataServiceHttpUnitTests.csproj", "{50E1B5C3-8DD0-40BE-B469-BDEBE4C3E1AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E8F06974-1D00-411A-B137-2BFB3BB7CA57}"
+	ProjectSection(SolutionItems) = preProject
+		DataServiceHttpTests.vsmdi = DataServiceHttpTests.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs02.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DataServiceHttpUnitTests\\DataServiceHttpUnitTests.csproj
+		SccProjectName1 = DataServiceHttpUnitTests
+		SccLocalPath1 = DataServiceHttpUnitTests
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DataServiceHttpTests.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50E1B5C3-8DD0-40BE-B469-BDEBE4C3E1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E1B5C3-8DD0-40BE-B469-BDEBE4C3E1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E1B5C3-8DD0-40BE-B469-BDEBE4C3E1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E1B5C3-8DD0-40BE-B469-BDEBE4C3E1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,90 @@
+
+Log Entry : 
+09/02/2012 19:47:36
+Error in: http://localhost:16650/DataLoader/Saanich/114_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 19:48:07
+Error in: http://localhost:16650/DataLoader/Saanich/114_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 19:48:18
+Error in: http://localhost:16650/DataLoader/Saanich/114_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 19:48:29
+Error in: http://localhost:16650/DataBrowser/Saanich/114_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 19:48:29
+Error in: http://localhost:16650/DataBrowser/Saanich/114_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 19:57:49
+Error in: http://localhost:16650/DataBrowser/Saanich/114_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 19:57:49
+Error in: http://localhost:16650/DataBrowser/Saanich/114_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 19:58:29
+Error in: http://localhost:16650/DataBrowser/Saanich/114_PropertyInfo. Error Message:Cannot access a closed file.
+__________________________
+
+Log Entry : 
+09/02/2012 19:58:29
+Error in: http://localhost:16650/DataBrowser/Saanich/114_PropertyInfo. Error Message:Cannot access a closed file.
+__________________________
+
+Log Entry : 
+09/02/2012 19:59:15
+Error in: http://localhost:16650/DataLoader/North Cowichan Property Data/83_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 20:00:26
+Error in: http://localhost:16650/DataBrowser/Saanich/114_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 20:00:26
+Error in: http://localhost:16650/DataBrowser/Saanich/114_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 20:05:06
+Error in: http://localhost:16650/DataLoader/Saanich/114_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 20:05:30
+Error in: http://localhost:16650/DataLoader/Saanich/114_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 20:07:24
+Error in: http://localhost:16650/DataLoader/Saanich/114_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 20:09:50
+Error in: http://localhost:16650/DataLoader/Saanich/114_PropertyInfo. Error Message:The remote server returned an error: (500) Internal Server Error.
+__________________________
+
+Log Entry : 
+09/02/2012 20:46:45
+Error in: http://localhost:16650/DataBrowser/DataBrowserRun/. Error Message:The remote server returned an error: (404) Not Found.
+__________________________
+
+Log Entry : 
+09/02/2012 20:46:45
+Error in: http://localhost:16650/DataBrowser/DataBrowserRun/. Error Message:The remote server returned an error: (404) Not Found.
+__________________________

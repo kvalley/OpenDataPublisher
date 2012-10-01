@@ -1,0 +1,6 @@
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\GenericParsing\bin\Debug\GenericParsing.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\GenericParsing\bin\Debug\GenericParsing.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\GenericParsing\bin\Debug\GenericParser.xml
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\GenericParsing\obj\Debug\GenericParsing.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\GenericParsing\obj\Debug\GenericParsing.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\GenericParsing\obj\Debug\GenericParsing.csprojResolveAssemblyReference.cache

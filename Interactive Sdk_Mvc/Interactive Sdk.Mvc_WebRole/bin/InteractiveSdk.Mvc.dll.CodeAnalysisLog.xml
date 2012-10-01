@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Targets>
+  <Target Name="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\bin\InteractiveSdk.Mvc.dll">
+   <Modules>
+    <Module Name="interactivesdk.mvc.dll">
+     <Namespaces>
+      <Namespace Name="MvcColudWeb.Controllers">
+       <Types>
+        <Type Name="AccountController" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#OnActionExecuting(System.Web.Mvc.ActionExecutingContext)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Controllers" File="AccountController.cs" Line="296">In externally visible method 'AccountController.OnActionExecuting(ActionExecutingContext)', validate parameter 'filterContext' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Odp.InteractiveSdk.Mvc">
+       <Types>
+        <Type Name="Helper" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DeSerializeLanguageXML()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Helper" File="Helper.cs" Line="55">In method 'Helper.DeSerializeLanguageXML()', call System.IDisposable.Dispose on object 'streamReader' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GenerateDatasetItemKey(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Helper" File="Helper.cs" Line="410">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'Helper.GenerateDatasetItemKey(string, string)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GenerateRequestKey(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Helper" File="Helper.cs" Line="420">Because the behavior of 'string.Format(string, object)' could vary based on the current user's locale settings, replace this call in 'Helper.GenerateRequestKey(string)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="HtmlExtender" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#NiceButton(System.Web.Mvc.HtmlHelper,Odp.InteractiveSdk.Mvc.IOgdiUI,System.String,System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Helper" File="HtmlExtender.cs" Line="13">In externally visible method 'HtmlExtender.NiceButton(this HtmlHelper, IOgdiUI, string, int, string)', validate parameter 'ui' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#NiceInputButton(System.Web.Mvc.HtmlHelper,Odp.InteractiveSdk.Mvc.IOgdiUI,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Helper" File="HtmlExtender.cs" Line="18">In externally visible method 'HtmlExtender.NiceInputButton(this HtmlHelper, IOgdiUI, string, string)', validate parameter 'ui' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Recaptcha" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Validate(System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Helper" File="Recaptcha.cs" Line="32">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'Recaptcha.Validate(string, string, string)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Odp.InteractiveSdk.Mvc.Controllers">
+       <Types>
+        <Type Name="DataBrowserController" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#SetURLs(System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Controllers" File="DataBrowserController.cs" Line="908">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'DataBrowserController.SetURLs(string, string, string)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Controllers" File="DataBrowserController.cs" Line="926">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'DataBrowserController.SetURLs(string, string, string)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DataCatalogController" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DataSets(System.Int32,System.Int32,System.String,System.String,Odp.InteractiveSdk.Mvc.Controllers.Filter)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Controllers" File="DataCatalogController.cs" Line="116">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'DataCatalogController.DataSets(int, int, string, string, Filter)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Controllers" File="DataCatalogController.cs" Line="131">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'DataCatalogController.DataSets(int, int, string, string, Filter)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Controllers" File="DataCatalogController.cs" Line="134">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'DataCatalogController.DataSets(int, int, string, string, Filter)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Controllers" File="DataCatalogController.cs" Line="134">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'DataCatalogController.DataSets(int, int, string, string, Filter)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Controllers" File="DataCatalogController.cs" Line="134">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'DataCatalogController.DataSets(int, int, string, string, Filter)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RequestController" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CompleteRequest(System.String,System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Controllers" File="RequestController.cs" Line="240">Because the behavior of 'string.Format(string, object)' could vary based on the current user's locale settings, replace this call in 'RequestController.CompleteRequest(string, string, string, string)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#New(Odp.InteractiveSdk.Mvc.Models.Request.Request)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Controllers" File="RequestController.cs" Line="107">In externally visible method 'RequestController.New(Request)', validate parameter 'rq' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Odp.InteractiveSdk.Mvc.Models">
+       <Types>
+        <Type Name="Container" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#op_Equality(Odp.InteractiveSdk.Mvc.Models.Container,Odp.InteractiveSdk.Mvc.Models.Container)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Models" File="Container.cs" Line="181">In externally visible method 'Container.operator ==(Container, Container)', validate parameter 'container1' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op_GreaterThan(Odp.InteractiveSdk.Mvc.Models.Container,Odp.InteractiveSdk.Mvc.Models.Container)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Models" File="Container.cs" Line="232">In externally visible method 'Container.operator &gt;(Container, Container)', validate parameter 'container1' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op_LessThan(Odp.InteractiveSdk.Mvc.Models.Container,Odp.InteractiveSdk.Mvc.Models.Container)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Models" File="Container.cs" Line="215">In externally visible method 'Container.operator &lt;(Container, Container)', validate parameter 'container1' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EntitySet" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetEntityDateAsString(System.DateTime)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.DateTime.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Models" File="EntitySet.cs" Line="167">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'EntitySet.GetEntityDateAsString(DateTime)' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op_GreaterThan(Odp.InteractiveSdk.Mvc.Models.EntitySet,Odp.InteractiveSdk.Mvc.Models.EntitySet)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Models" File="EntitySet.cs" Line="330">In externally visible method 'EntitySet.operator &gt;(EntitySet, EntitySet)', validate parameter 'es1' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op_LessThan(Odp.InteractiveSdk.Mvc.Models.EntitySet,Odp.InteractiveSdk.Mvc.Models.EntitySet)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Models" File="EntitySet.cs" Line="314">In externally visible method 'EntitySet.operator &lt;(EntitySet, EntitySet)', validate parameter 'es1' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SampleCodeLanguage" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#op_Equality(Odp.InteractiveSdk.Mvc.Models.SampleCodeLanguage,Odp.InteractiveSdk.Mvc.Models.SampleCodeLanguage)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Models" File="SampleCodeLanguage.cs" Line="169">In externally visible method 'SampleCodeLanguage.operator ==(SampleCodeLanguage, SampleCodeLanguage)', validate parameter 'sc1' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op_GreaterThan(Odp.InteractiveSdk.Mvc.Models.SampleCodeLanguage,Odp.InteractiveSdk.Mvc.Models.SampleCodeLanguage)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Models" File="SampleCodeLanguage.cs" Line="220">In externally visible method 'SampleCodeLanguage.operator &gt;(SampleCodeLanguage, SampleCodeLanguage)', validate parameter 'sc1' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#op_LessThan(Odp.InteractiveSdk.Mvc.Models.SampleCodeLanguage,Odp.InteractiveSdk.Mvc.Models.SampleCodeLanguage)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Models" File="SampleCodeLanguage.cs" Line="203">In externally visible method 'SampleCodeLanguage.operator &lt;(SampleCodeLanguage, SampleCodeLanguage)', validate parameter 'sc1' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Odp.InteractiveSdk.Mvc.Models.Comments">
+       <Types>
+        <Type Name="Comment" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ParentLink" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_ParentLink()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="NonBreaking">
+               <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Models\Comments" File="Comment.cs" Line="33">Because the behavior of 'string.Format(string, object)' could vary based on the current user's locale settings, replace this call in 'Comment.ParentLink.get()' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+              </Message>
+              <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="NonBreaking">
+               <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Models\Comments" File="Comment.cs" Line="29">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'Comment.ParentLink.get()' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#PostedOnAsText" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_PostedOnAsText()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.DateTime.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="NonBreaking">
+               <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Models\Comments" File="Comment.cs" Line="43">Because the behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings, replace this call in 'Comment.PostedOnAsText.get()' with a call to 'DateTime.ToString(string, IFormatProvider)'. If the result of 'DateTime.ToString(string, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Odp.InteractiveSdk.Mvc.Models.Request">
+       <Types>
+        <Type Name="RequestListModel" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(Odp.InteractiveSdk.Mvc.Models.CommonListData)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Models\Request" File="RequestListModel.cs" Line="27">In externally visible method 'RequestListModel.RequestListModel(CommonListData)', validate parameter 'data' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Odp.InteractiveSdk.Mvc.Repository">
+       <Types>
+        <Type Name="BlogAndAnnouncementRepository" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetBlogsAndAnnouncements" Kind="Property" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_GetBlogsAndAnnouncements()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+               <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Repository" File="BlogsAndAnnouncementsRepository.cs" Line="34">In method 'BlogAndAnnouncementRepository.GetBlogsAndAnnouncements.get()', call System.IDisposable.Dispose on object 'reader' before all references to it are out of scope.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CommentRepository" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Update(Odp.InteractiveSdk.Mvc.Models.Comments.Comment)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Repository" File="CommentRepository.cs" Line="37">In externally visible method 'CommentRepository.Update(Comment)', validate parameter 'comment' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EntitySetDetailsRepository" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetBrowserData(System.String,System.String,System.String,System.Int32,System.String,System.String,System.Boolean,System.Int32)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Repository" File="EntitySetDetailsRepository.cs" Line="135">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'EntitySetDetailsRepository.GetBrowserData(string, string, string, int, string, string, bool, int)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Repository" File="EntitySetDetailsRepository.cs" Line="135">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'EntitySetDetailsRepository.GetBrowserData(string, string, string, int, string, string, bool, int)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Repository" File="EntitySetDetailsRepository.cs" Line="135">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'EntitySetDetailsRepository.GetBrowserData(string, string, string, int, string, string, bool, int)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetMetaData(System.String,System.String)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Repository" File="EntitySetDetailsRepository.cs" Line="302">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'EntitySetDetailsRepository.GetMetaData(string, string)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Repository" File="EntitySetDetailsRepository.cs" Line="302">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'EntitySetDetailsRepository.GetMetaData(string, string)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Repository" File="EntitySetDetailsRepository.cs" Line="302">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'EntitySetDetailsRepository.GetMetaData(string, string)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RatingRepository" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddVote(Odp.InteractiveSdk.Mvc.Models.Rating.Rate)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Repository" File="RatingRepository.cs" Line="22">In externally visible method 'RatingRepository.AddVote(Rate)', validate parameter 'item' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RequestRepository" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#UpdateRequest(Odp.InteractiveSdk.Mvc.Models.Request.Request)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Repository" File="RequestRepository.cs" Line="101">In externally visible method 'RequestRepository.UpdateRequest(Request)', validate parameter 'item' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SampleCodeGenerator" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor(System.String)" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2012-02-20 20:09:54Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\Interactive Sdk.Mvc_WebRole\Repository" File="SampleCodeGenerator.cs" Line="67">In method 'SampleCodeGenerator.SampleCodeGenerator(string)', object 'codeReader' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'codeReader' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="ExceptionEdge">In method {0}, object {1} is not disposed along all exception paths. Call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Resolution Name="NonExceptionEdge">In method {0}, call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304">
+   <Name>Specify CultureInfo</Name>
+   <Description>If an overload exists that takes a CultureInfo argument, it should always be called in favor of an overload that does not. The CultureInfo type contains culture-specific information required for performing numeric and string operations, such as casing, formatting, and string comparisons. In scenarios where conversion and parsing behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182189(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validate arguments of public methods</Name>
+   <Description>All reference arguments passed to externally visible methods should be checked against null (Nothing in VB). If appropriate, throw a System.ArgumentNullException when the argument is null.</Description>
+   <Resolution Name="Default">In externally visible method {0}, validate parameter '{1}' before using it.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

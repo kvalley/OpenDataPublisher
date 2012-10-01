@@ -1,0 +1,10 @@
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\WindowsAzureStorage\bin\Release\WindowsAzureStorageProvider.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\WindowsAzureStorage\bin\Release\WindowsAzureStorageProvider.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\WindowsAzureStorage\bin\Release\DTBookTranslation.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\WindowsAzureStorage\bin\Release\WindowsBase.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\WindowsAzureStorage\bin\Release\DTBookTranslation.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\WindowsAzureStorage\obj\Release\Odp.InteractiveSdk.Mvc.AzureResources.resources
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\WindowsAzureStorage\obj\Release\WindowsAzureStorageProvider.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\WindowsAzureStorage\obj\Release\WindowsAzureStorageProvider.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\WindowsAzureStorage\obj\Release\WindowsAzureStorage.csprojResolveAssemblyReference.cache
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\WindowsAzureStorage\obj\Release\WindowsAzureStorage.csproj.GenerateResource.Cache

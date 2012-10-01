@@ -1,0 +1,5 @@
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Shared\Ogdi.Azure\bin\Release\Odp.Data.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Shared\Ogdi.Azure\bin\Release\Odp.Data.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Shared\Ogdi.Azure\obj\Release\Odp.Data.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Shared\Ogdi.Azure\obj\Release\Odp.Data.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Shared\Ogdi.Azure\obj\Release\Odp.Data.csprojResolveAssemblyReference.cache

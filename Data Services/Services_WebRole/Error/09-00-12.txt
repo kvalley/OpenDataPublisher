@@ -1,0 +1,15 @@
+
+Log Entry : 
+07/09/2012 22:13:58
+Error in: http://localhost:1114/v1/sql/83_PropertyInfo/. Error Message:Access denied for user 'MyCivicAdmin'@'localhost' (using password: YES)
+__________________________
+
+Log Entry : 
+07/09/2012 22:16:10
+Error in: http://localhost:1114/v1/sql/83_PropertyInfo/. Error Message:Access denied for user 'MyCivicAdmin'@'localhost' (using password: YES)
+__________________________
+
+Log Entry : 
+07/09/2012 22:35:22
+Error in: http://localhost:1114/v1/sql/83_PropertyInfo/. Error Message:Access denied for user 'MyCivicAdmin'@'localhost' (using password: YES)
+__________________________

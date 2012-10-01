@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Metadata" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MetadataContainer" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+</Schema>

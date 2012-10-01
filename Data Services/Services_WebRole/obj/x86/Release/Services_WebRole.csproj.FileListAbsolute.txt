@@ -1,0 +1,14 @@
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\obj\x86\Release\Services_WebRole.csprojResolveAssemblyReference.cache
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Release\Odp.DataServices.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Release\Odp.DataServices.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Release\Odp.DataServices.dll.CodeAnalysisLog.xml
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Release\Odp.DataServices.dll.lastcodeanalysissucceeded
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Release\CSharpFormat.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Release\Newtonsoft.Json.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Release\Odp.Data.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Release\System.Web.Abstractions.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Release\Odp.Data.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Release\CSharpFormat.xml
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Release\Newtonsoft.Json.xml
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\obj\x86\Release\Odp.DataServices.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\obj\x86\Release\Odp.DataServices.pdb

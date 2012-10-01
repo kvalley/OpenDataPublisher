@@ -1,0 +1,12 @@
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Debug\Odp.DataServices.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Debug\Odp.DataServices.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Debug\CSharpFormat.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Debug\Odp.Data.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Debug\System.Web.Abstractions.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Debug\Odp.Data.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Debug\CSharpFormat.xml
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Debug\Newtonsoft.Json.xml
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\obj\x86\Debug\Services_WebRole.csprojResolveAssemblyReference.cache
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\obj\x86\Debug\Odp.DataServices.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\obj\x86\Debug\Odp.DataServices.pdb

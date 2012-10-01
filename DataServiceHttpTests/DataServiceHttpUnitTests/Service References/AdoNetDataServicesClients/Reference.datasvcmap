@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e1bcfea7-d22d-4c36-8dbf-581eaf64577f" xmlns="urn:schemas-microsoft-com:xml-dataservicemap">
+  <MetadataSources>
+    <MetadataSource Address="http://ogdi.cloudapp.net/v1/dc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.edmx" MetadataType="Edmx" ID="d9f1378a-9a6f-4849-8278-cce48307b1f4" SourceId="1" SourceUrl="http://ogdi.cloudapp.net/v1/dc" />
+  </Metadata>
+  <Extensions />
+</ReferenceGroup>

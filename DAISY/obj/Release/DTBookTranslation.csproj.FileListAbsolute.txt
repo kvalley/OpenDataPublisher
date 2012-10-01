@@ -1,0 +1,5 @@
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\DAISY\bin\Release\DTBookTranslation.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\DAISY\bin\Release\DTBookTranslation.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\DAISY\obj\Release\DTBookTranslation.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\DAISY\obj\Release\DTBookTranslation.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\DAISY\obj\Release\DTBookTranslation.csprojResolveAssemblyReference.cache

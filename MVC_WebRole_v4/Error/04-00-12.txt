@@ -1,0 +1,55 @@
+
+Log Entry : 
+09/04/2012 10:27:04
+Error in: http://localhost:16650/DataLoader/. Error Message:Data too long for column 'Description' at row 1
+__________________________
+
+Log Entry : 
+09/04/2012 10:28:46
+Error in: http://localhost:16650/DataLoader/. Error Message:Data too long for column 'Description' at row 1
+__________________________
+
+Log Entry : 
+09/04/2012 10:32:34
+Error in: http://localhost:16650/DataLoader/. Error Message:Data too long for column 'Description' at row 1
+__________________________
+
+Log Entry : 
+09/04/2012 12:47:40
+Error in: http://localhost:16650/DataLoader/. Error Message:Fatal error encountered during command execution.
+__________________________
+
+Log Entry : 
+09/04/2012 12:55:19
+Error in: http://localhost:16650/DataBrowser/North. Error Message:Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+09/04/2012 13:00:27
+Error in: http://localhost:16650/DataBrowser/North. Error Message:Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+09/04/2012 13:00:49
+Error in: http://localhost:16650/DataBrowser/North. Error Message:Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+09/04/2012 14:12:21
+Error in: http://localhost:16650/DataLoader/. Error Message:Table 'odp.odpservicemetadata' doesn't exist
+__________________________
+
+Log Entry : 
+09/04/2012 14:18:57
+Error in: http://localhost:16650/DataLoader/. Error Message:Unknown column 'DatasetName' in 'field list'
+__________________________
+
+Log Entry : 
+09/04/2012 20:47:41
+Error in: http://localhost:16650/DataLoader/. Error Message:Column 'EntitySet' cannot be null
+__________________________
+
+Log Entry : 
+09/04/2012 21:02:24
+Error in: http://localhost:16650/DataLoader/. Error Message:Column 'EntitySet' cannot be null
+__________________________

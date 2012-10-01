@@ -1,0 +1,9 @@
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\InteractiveSdk.WorkerRole\bin\Release\XmlValidation\dtbook-2005-3.dtd
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\InteractiveSdk.WorkerRole\bin\Release\InteractiveSdk.WorkerRole.dll.config
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\InteractiveSdk.WorkerRole\bin\Release\InteractiveSdk.WorkerRole.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\InteractiveSdk.WorkerRole\bin\Release\InteractiveSdk.WorkerRole.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\InteractiveSdk.WorkerRole\bin\Release\Odp.Data.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\InteractiveSdk.WorkerRole\bin\Release\Odp.Data.pdb
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\InteractiveSdk.WorkerRole\obj\Release\ResolveAssemblyReference.cache
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\InteractiveSdk.WorkerRole\obj\Release\InteractiveSdk.WorkerRole.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\InteractiveSdk.WorkerRole\obj\Release\InteractiveSdk.WorkerRole.pdb

@@ -1,0 +1,45 @@
+<form name="input" action="html_form_action.asp" method="get">
+Username: <input type="text" name="user" />
+<input type="submit" value="Submit<TABLE border='2' align='center'>
+<TR><TD COLSPAN=2 align=center>"Last-Cached" Custom <BR>Header Control Demo</TD></TR>
+<TR><TD width="150" align='center'>
+<LABEL>Name</LABEL>
+</TD><TD>
+<input name='Customername' type="edit"/>
+</TD></TR>
+<TR><TD width="150" align='center'>
+<LABEL>Telephone number</LABEL>
+</TD><TD>
+<input type="edit" name="telno"/>
+</TD></TR>
+</TABLE>
+<TABLE align='center'>
+<TR><TD width="150" align='center'>
+<input type='button' value='send Information' align='center' onclick='sendinfo()'/>
+</TD></TR>
+</TABLE>
+<script language="vbscript">
+function sendinfo()
+	Dim myhttp
+	if(not(Customername.value = "")) then
+		datatosend="Name=" & Customername.value & "&TelNo=" &telno.value
+		Set myhttp=CreateObject("Msxml2.XMLHTTP")
+		myhttp.open "POST", "http://localhost/XMLREQHEADER/httpreqserver.asp", false
+		myhttp.setRequestHeader "lastCached", now()
+		myhttp.setRequestHeader "Content-Type", "application/x-www-form-urlencoded"
+		txtSent.innerText =datatosend
+		' To the Moon, Alice.....
+		myhttp.send datatosend
+		reqstatus.innerText = myhttp.status
+		txtResult.innerText= myhttp.responseText 
+		set myhttp = Nothing
+	else
+		txtSent.innerText= "invalid data"
+		set myhttp = Nothing
+	end if
+end function
+</script>
+Status:<div id=reqstatus></div><BR>
+Sent:<div id=txtSent></div><BR>
+Rec'd:<div id=txtResult></div>" />
+</form>

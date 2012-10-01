@@ -1,0 +1,621 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%@ Import Namespace="Odp.InteractiveSdk.Mvc.App_GlobalResources"  %>
+<%@ Import Namespace="Odp.Azure.Configuration" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+
+
+// media check
+
+//string[] userAgentsMobile = new string[21];
+string[] userAgentsMobile = new string[19];
+bool mediaTypeMobile = false;
+
+private bool checkMediaType(string[] uaList, string uaKnown)
+{
+// check user agent string against array, return true if found, or false if not found
+// checking method changed by Karen, since it did not work :)
+
+
+    int pos;
+    foreach (string ua in uaList)
+    {
+        if (!(ua.Trim() == ""))
+        {
+            pos = ("$" + uaKnown).ToLower().IndexOf(ua.ToLower());
+            if (pos != -1)
+            {
+                return true;
+            }
+        }
+
+    }
+    return false;
+
+}
+
+
+public void page_load()
+{
+    userAgentsMobile[0] = "Blazer";
+    userAgentsMobile[1] = "Palm";
+    userAgentsMobile[2] = "Handspring";
+    userAgentsMobile[3] = "Nokia";
+    userAgentsMobile[4] = "Kyocera";
+    userAgentsMobile[5] = "Samsung";
+    userAgentsMobile[6] = "Motorola";
+    userAgentsMobile[7] = "Smartphone";
+    userAgentsMobile[8] = "Windows CE";
+    userAgentsMobile[9] = "Blackberry";
+    userAgentsMobile[10] = "WAP";
+    userAgentsMobile[11] = "Smartphone";
+    userAgentsMobile[12] = "SonyEricsson";
+    userAgentsMobile[13] = "PlayStation Portable";
+    userAgentsMobile[14] = "LG";
+    userAgentsMobile[15] = "MMP";
+    userAgentsMobile[16] = "OPWV";
+    userAgentsMobile[17] = "Symbian";
+    userAgentsMobile[18] = "EPOC";
+//    userAgentsMobile[19] = "iPhone";
+//    userAgentsMobile[20] = "iPod";
+
+    if (Request.ServerVariables["HTTP_USER_AGENT"] != null)
+    {
+    	mediaTypeMobile = checkMediaType(userAgentsMobile, Request.ServerVariables["HTTP_USER_AGENT"].ToString());
+    } else {
+    	mediaTypeMobile = false;
+    }
+
+    if (mediaTypeMobile)
+    {
+        MainContent.Visible = false;
+        lblNotSupported.Visible = true;
+        lblNotSupported.Text = "<p>Applications are not supported on mobile devices.</p>";
+    }
+
+    if (!IsPostBack) {
+		DataBind();
+    }
+}
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title><asp:ContentPlaceHolder ID="TitleContent" runat="server"><%= OgdiConfiguration.GetValue("HomeTitle") %></asp:ContentPlaceHolder></title>
+<meta name="Description" content=""/>
+<meta name="KeyWords" content=""/>
+
+<!-- for mobile version -->
+<asp:Label id="showMobileStyle" visible="<%# mediaTypeMobile %>" runat="server">
+            <link rel="stylesheet" href="/css/mobile.css" type="text/css" media="screen" />
+            <meta name="viewport" content="width=400" />
+
+            <script type="text/javascript">
+                function init() { }
+            </script>
+</asp:Label>
+<asp:Label id="showScreenStyle" visible="<%# !mediaTypeMobile %>"  runat="server">
+
+<link href="../../Resource/Css" rel="stylesheet" type="text/css" />
+<link href="../../Content/css/redmond/jquery-ui-1.7.1.custom.css" rel="stylesheet" type="text/css" />
+            
+<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://api.recaptcha.net/js/recaptcha_ajax.js"></script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+<script type="text/javascript" language="javascript" src="<%= Url.Content("../../Scripts/common.js") %>"></script>
+
+<link rel="stylesheet" href="http://www.nanaimo.ca/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://www.nanaimo.ca/css/print.css" type="text/css" media="print" />
+
+<noscript>
+	<div id="dvErr" style="background-color:#fcbc9c;">
+		<table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><img alt="<%= UIConstants.GC_NoScriptAltText %>" 
+			            src="<%= UIConstants.GC_NoScriptImagePath %>" 
+			            title="<%= UIConstants.GC_NoScriptAltText %>"
+			            longdesc="<%= UIConstants.GC_NoScriptLongDesc %>" /></td>
+			<td style="width:100%"><%= UIConstants.GC_NoScriptMessage %></td>
+		</tr>
+		</table>
+	</div>
+</noscript>
+
+<!--[if IE 6]>
+<link rel="stylesheet" href="http://www.nanaimo.ca/css/ie6.css" type="text/css" media="screen" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="http://www.nanaimo.ca/css/ie7.css" type="text/css" media="screen" />
+<![endif]-->
+
+<script src="http://www.nanaimo.ca/js/quickmenus.js" type="text/javascript"></script>
+<link rel="stylesheet" href="http://www.nanaimo.ca/css/qm.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="http://www.nanaimo.ca/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="http://www.nanaimo.ca/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://www.nanaimo.ca/js/jquery.site-enhancement.js"></script>
+
+<script src="http://www.nanaimo.ca/js/external.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+    var sitePath = "http://www.nanaimo.ca";
+</script>
+<script type="text/javascript" src="http://www.nanaimo.ca/js/common.js"></script>
+<script type="text/javascript" src="http://www.nanaimo.ca/js/jquery.headers.js"></script>
+
+<style type="text/css">Containers
+    #MSVE_obliqueNotification
+    {
+        visibility: hidden;
+    }
+</style>
+            
+<script type="text/javascript">
+    var RecaptchaOptions = {
+        theme: 'white'
+    };
+</script>
+
+</asp:Label>
+
+<%--<script type="text/javascript" src="http://www.nanaimo.ca/js/randomPhoto.js"></script>--%>
+<script type="text/javascript" src="http://www.nanaimo.ca/js/custom.js"></script>
+<script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+        // random image and text loading on home page
+
+        // random number between 1-5
+        var randomNumber = Math.floor(Math.random() * 5) + 1;
+
+        // variables
+        var hPhoto, hHeadline, hBlurb, hLink;
+
+        switch (randomNumber) {
+            case 1: // residents
+                hPhoto = 'url(http://www.nanaimo.ca/images/header-photo-residents.jpg)';
+                hHeadline = 'Nanaimo - Where a sense of community is second nature';
+                hLink = 'http://www.nanaimo.ca/EN/main/residents.html';
+                break;
+            case 2: // business
+                hPhoto = 'url(http://www.nanaimo.ca/images/header-photo-business.jpg)';
+                hHeadline = 'Nanaimo - Giving businessess the opportunity to grow';
+                hLink = 'http://www.nanaimo.ca/EN/main/business.html';
+                break;
+            case 3: // municipal-hall
+                hPhoto = 'url(http://www.nanaimo.ca/images/header-photo-municipal-hall.jpg)';
+                hHeadline = 'Nanaimo - Where great ideas come to light';
+                hLink = 'http://www.nanaimo.ca/EN/main/municipal.html';
+                break;
+            case 4: // departments
+                hPhoto = 'url(http://www.nanaimo.ca/images/header-photo-departments.jpg)';
+                hHeadline = 'Nanaimo - Quality city services through innovation';
+                hLink = 'http://www.nanaimo.ca/EN/main/departments.html';
+                break;
+            default: // visitors
+                hPhoto = 'url(http://www.nanaimo.ca/images/header-photo-visitors.jpg)';
+                hLink = 'http://www.nanaimo.ca/EN/main/visitors.html';
+                break;
+        }
+
+        // do the replacement
+        if (randomNumber > 0) {
+            $('#header-photo').css({ 'background-image': hPhoto });
+            $('p#blurb').html(hBlurb);
+            $('a#learn-more-link').attr('href', hLink);
+        }
+
+    });
+</script>
+
+<asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+
+<script type="text/javascript">
+	vpath = '<%= this.ResolveUrl("~/") %>';
+</script>
+
+</head>
+
+<body class="section-departments page-app" onload="init()">
+
+<div id="top"> <!-- open TOP -->
+
+<!-- Begin Header -->
+
+
+<!--ZOOMSTOP-->
+<div id="header"> <!-- open HEADER -->
+	<div id="header-left"></div><div id="header-right"></div>
+
+	<div id="brand"> <!-- open BRAND -->
+		<p id="heading"><strong><a href="http://www.nanaimo.ca/EN/index.html" title="Home">City of Nanaimo</a></strong></p>
+
+		<!-- for mobile version -->
+		<img src="http://www.nanaimo.ca/images/logo-print.png" width="244" height="80" alt="Nanaimo logo" id="print-logo" />
+
+		<div id="header-photo"></div>
+	</div> <!-- close BRAND -->
+
+</div> <!-- close HEADER -->
+<!--ZOOMRESTART-->
+<!-- End Header -->
+
+<div id="wrapper-1"> <!-- open WRAPPER 1 -->
+<div id="wrapper-2"> <!-- open WRAPPER 2 -->
+
+<!--ZOOMSTOP-->
+<div id="accessibility"> <!-- open ACCESSIBILITY -->
+
+	<div id="accessibility-inside"> <!-- open ACCESSIBILITY-INSIDE -->
+	
+	<span id="font-resize"></span>
+
+	<p id="skip-links"> <!-- open SKIP-LINKS -->
+	
+		<strong>Skip to:</strong>
+
+		<a href="#content" class="skip" title="Go to Content">Content</a> <span>|</span> 
+			
+		<a href="#section-navigation" class="skip" title="Go to Section Navigation">Section Navigation</a> <span>|</span> 
+		
+		<a href="#navigation" class="skip" title="Go to Main Navigation">Main Navigation</a> <span>|</span> 
+
+		<a href="http://www.nanaimo.ca/EN/topnav/sitemap.html" class="skip" title="Go to Sitemap">Sitemap</a> <span>|</span>
+		
+		<a href="#search" class="skip" title="Go to Search">Search</a>
+		
+	</p> <!-- close SKIP-LINKS -->
+		
+	</div> <!-- close ACCESSIBILITY-INSIDE -->
+	
+</div> <!-- close ACCESSIBILITY -->
+<!--ZOOMRESTART-->
+
+<div id="main-wrapper"> <!-- open MAIN-WRAPPER -->
+<div id="main"> <!-- open MAIN -->
+<div id="main-inside"> <!-- open MAIN-INSIDE -->
+
+
+<div id="content-wrapper"> <!-- open CONTENT-WRAPPER -->
+<div id="content-wrapper2"> <!-- open CONTENT-WRAPPER2 -->
+<div id="content" style="margin:0px;"> <!-- open CONTENT -->
+
+	<!-- Begin subNav -->
+
+	<!-- End subNav -->
+
+
+	<div id="content-inside"> <!-- open CONTENT-INSIDE -->
+	<span class="cms-button"></span>
+	
+    <div id="breadcrumbs" style="margin-left: 10px;"> <!-- open BREADCRUMBS -->
+        <a href="http://www.nanaimo.ca/EN/index.html" title="Home">Home</a><span> &gt; </span>
+		<a href="http://www.nanaimo.ca/EN/main/departments.html" title="Departments">Departments</a><span> &gt; </span>
+	    <a href="http://www.nanaimo.ca/EN/main/departments/information-technology.html" title="Information Technology">Information Technology</a><span> &gt; </span>
+		<strong>Nanaimo Data Catalogue</strong>
+	</div>
+    
+    <div>
+        <div style="margin-left:10px;"><h1 id="headline">Nanaimo Data Catalogue <span style="font-size:small; font-weight: bold; color: Red;">(Beta)</span></h1></div>
+        
+    </div>
+        
+    <div style="margin-bottom: 20px;">
+        <div style="padding: 5px; padding-left: 10px;">
+            <%= Html.ActionLink("Data Catalogue", "DataSetList", "DataCatalog")%>
+            <% if (!String.IsNullOrEmpty(System.Configuration.ConfigurationManager.AppSettings["DeveloperPageURL"])) { %>
+                | <a href="<%= System.Configuration.ConfigurationManager.AppSettings["DeveloperPageURL"] %>">Developers</a>
+            <% } %>
+            <% if (!String.IsNullOrEmpty(System.Configuration.ConfigurationManager.AppSettings["LicencePageURL"])) { %>
+                | <a href="<%= System.Configuration.ConfigurationManager.AppSettings["LicencePageURL"] %>">Licence</a>
+            <% } %>
+            <% if (!String.IsNullOrEmpty(System.Configuration.ConfigurationManager.AppSettings["AboutPageURL"])) { %>
+                | <a href="<%= System.Configuration.ConfigurationManager.AppSettings["AboutPageURL"] %>">About</a>
+            <% } %>
+        </div>
+    </div>
+
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+    <div style="padding-bottom:20px; padding-top: 30px; padding-left: 5px;">
+        <% if (!String.IsNullOrEmpty(System.Configuration.ConfigurationManager.AppSettings["TermsOfUseURL"])) { %>
+            <a href="<%= System.Configuration.ConfigurationManager.AppSettings["TermsOfUseURL"] %>" class="footerlink">Terms of Use</a>
+        <% } %>
+        <% if (!String.IsNullOrEmpty(System.Configuration.ConfigurationManager.AppSettings["TradeMarksURL"])) { %>
+        | <a href="<%= System.Configuration.ConfigurationManager.AppSettings["TradeMarksURL"] %>">Trademarks</a>
+        <% } %>
+        <% if (!String.IsNullOrEmpty(System.Configuration.ConfigurationManager.AppSettings["PrivacyPageURL"])) { %>
+		| <a href="<%= System.Configuration.ConfigurationManager.AppSettings["PrivacyPageURL"] %>">Privacy Policy</a>
+        <% } %>
+        <% if (!String.IsNullOrEmpty(System.Configuration.ConfigurationManager.AppSettings["CopyRightsStatement"])) { %>
+        | <%= System.Configuration.ConfigurationManager.AppSettings["CopyRightsStatement"]%>
+        <% } %>
+    </div>
+
+    <div id="polaroid" style="display:none;">
+	    <a id="polaroidPhotoLink" href="/photo_upload/gallery_viewer.aspx" title="View Photos">
+		    <img src="http://www.nanaimo.ca/images/polaroid-photo.jpg" alt="City of Nanaimo" />
+	    </a>
+    </div>
+    <asp:Label ID="lblNotSupported" runat="server" Text="" Visible="false"></asp:Label>
+	
+	<div class="clear"></div>
+	
+	<a href="#top" class="skip" title="Go to Top">Go to Top</a>
+
+	</div> <!-- close CONTENT-INSIDE -->
+</div> <!-- close CONTENT -->
+</div> <!-- close CONTENT-WRAPPER2 -->
+</div> <!-- close CONTENT-WRAPPER -->
+
+<!--ZOOMSTOP-->
+
+<!--ZOOMRESTART-->
+
+
+
+<!--ZOOMSTOP-->
+
+<div id="section-navigation" style="display:none;"> <!-- open SECTION-NAVIGATION -->
+	<div id="section-navigation-top">
+	<h3><span>Section Navigation:</span> <a href="http://www.nanaimo.ca/EN/main/departments.html" title="Departments">Departments</a></h3>
+	</div>
+	<div id="section-navigation-middle">
+
+
+		<ul>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/BuildingInspection.html"  title="Building Inspection"><span>Building Inspection</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/CommunityPlanning.html"  title="Community Planning"><span>Community Planning</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/Police.html"  title="Community Policing and Services"><span>Community Policing and Services</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/CurrentPlanning.html"  title="Current Planning"><span>Current Planning</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/EconomicDevelopment.html"  title="Economic Development"><span>Economic Development</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/EngineeringPublicWorks.html"  title="Engineering/Public Works"><span>Engineering/Public Works</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/finance.html"  title="Finance"><span>Finance</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/FireRescue.html"  class="parent_commentedOut" title="Fire Rescue"><span>Fire Rescue</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/HumanResources.html"  title="Human Resources"><span>Human Resources</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/information-technology.html"  title="Information Technology"><span>Information Technology</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/LegislativeServices.html"  title="Legislative Services"><span>Legislative Services</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/parks-recreation-culture.html"  title="Parks, Recreation and Culture"><span>Parks, Recreation and Culture</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/PermitsBylawandProperties.html"  title="Permits, Bylaw and Properties"><span>Permits, Bylaw and Properties</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/RealEstate.html"  title="Real Estate"><span>Real Estate</span></a></li>
+	
+		<li><a href="http://www.nanaimo.ca/EN/main/departments/Subdivision.html"  title="Subdivision"><span>Subdivision</span></a></li>
+	
+		</ul>
+	
+
+
+<!--
+
+//-->
+
+
+
+	</div>
+	<div id="section-navigation-bottom"></div>
+</div> <!-- close SECTION-NAVIGATION -->
+
+<!--ZOOMRESTART-->
+
+<div class="clear"></div>
+
+</div> <!-- close MAIN-WRAPPER -->
+</div> <!-- close MAIN -->
+</div> <!-- close MAIN-INSIDE -->
+
+
+
+<!-- Begin NAVIGATION -->
+
+
+<!--ZOOMSTOP-->
+<div id="navigation">
+    <!-- open NAVIGATION -->
+    <div id="navigation-inside">
+        <h3>
+            Main Navigation</h3>
+        <!-- for mobile version -->
+	<asp:Label id="showDropdownStyle" visible="<%# !mediaTypeMobile %>" runat="server">
+        <script type="text/javascript" src="http://www.nanaimo.ca/js/menu_public.js"></script>
+
+        <noscript>
+	    
+</asp:Label>
+
+            
+			<ul id="qm1" class="qmmc-ns">
+		
+			<li id="residents-nav"><a href="http://www.nanaimo.ca/EN/main/residents.html">Residents</a></li>
+		
+			<li id="business-nav"><a href="http://www.nanaimo.ca/EN/main/business.html">Business</a></li>
+		
+			<li id="visitors-nav"><a href="http://www.nanaimo.ca/EN/main/visitors.html">Visitors</a></li>
+		
+			<li id="municipal-nav"><a href="http://www.nanaimo.ca/EN/main/municipal.html">Municipal Hall</a></li>
+		
+			<li id="departments-nav"><a href="http://www.nanaimo.ca/EN/main/departments.html">Departments</a></li>
+		
+			<li id="want-nav"><a href="http://www.nanaimo.ca/EN/main/want.html">I Want To...</a></li>
+		
+			</ul>
+		
+            <!-- for mobile version -->
+            <asp:Label id="showNoScriptStyle" visible="<%# !mediaTypeMobile %>" runat="server">
+        </noscript>
+        
+</asp:Label>
+
+    </div>
+</div>
+<!-- close NAVIGATION -->
+<div id="search">
+    <!-- open SEARCH -->
+    <form id="search-form" action="http://www.nanaimo.ca/search/nanaimosearch.asp">
+        <p>
+            <label for="query">
+                Search</label>
+            <input name="zoom_query" id="query" type="text" class="text-input" />
+            <!-- for mobile version -->
+            <asp:Label id="showMobileSearchStyle" visible="<%# mediaTypeMobile %>" runat="server">
+<input type="image" src="/images/button-search-2.png" name="submit" id="submit" class="submit" alt="Search" />
+</asp:Label>
+<asp:Label id="showScreenSearchStyle" visible="<%# !mediaTypeMobile %>" runat="server">
+
+
+            <input type="image" src="http://www.nanaimo.ca/images/button-search-2.png"
+                name="submit" id="submit" class="submit" alt="Search" />
+            
+</asp:Label>
+
+        </p>
+    </form>
+</div>
+<!-- close SEARCH -->
+<div id="minor-navigation">
+    <!-- open MINOR-NAVIGATION -->
+    <div id="minor-navigation-inside">
+        <!-- open MINOR-NAVIGATION-INSIDE -->
+        <h3>
+            Minor Navigation</h3>
+        
+			<ul>
+		
+			<li id="home-nav"><a href="http://www.nanaimo.ca/EN/index.html" title="Home">Home</a></li>
+		
+			<li id="news-nav"><a href="http://www.nanaimo.ca/EN/topnav/news/2010WhatsNew.html" title="What's New"  >What's New </a></li>
+		
+			<li id="directory-nav"><a href="http://www.nanaimo.ca/CityServices/CityServices.aspx " title="Directory">Directory</a></li>
+		
+			<li id="sitemap-nav"><a href="http://www.nanaimo.ca/EN/topnav/sitemap.html" title="Sitemap">Sitemap</a></li>
+		
+			</ul>
+		
+    </div>
+    <!-- close MINOR-NAVIGATION-INSIDE -->
+</div>
+<!-- close MINOR-NAVIGATION -->
+<!-- for mobile version -->
+<asp:Label id="showWeatherStyle" visible="<%# !mediaTypeMobile %>" runat="server">
+<!-- open WEATHER -->
+<div id="nav_pnlWeather">
+	
+    <div id="weather2">
+        <p>
+            <span id="spanWeatherDate" class="date"></span><span id="spanWeatherTemp" class="temperature">
+            </span>
+            <a href="/weather/weather.aspx"><img id="imgWeather" src="" alt="" style="display:none" width="30px" height="30px" /></a>
+        </p>
+    </div>
+
+</div>
+
+<!-- close WEATHER -->
+
+</asp:Label>
+
+<!--ZOOMRESTART-->
+
+<!-- End NAVIGATION -->
+
+
+</div> <!-- close WRAPPER 2 -->
+</div> <!-- close WRAPPER 1 -->
+</div> <!-- close TOP -->
+
+<!-- Begin Footer -->
+
+
+<!--ZOOMSTOP-->
+<div id="footer"> <!-- open FOOTER -->
+	<div id="footer-left"></div><div id="footer-right"></div>
+
+	<div id="footer-inside">
+	<div class="col" id="footer-1">
+	
+		<p id="disclaimer"><strong>Although the City of Nanaimo tries to assure the accuracy of all information here, you should confirm all information.</strong><br />
+		Copyright &copy; 2010 City of Nanaimo. All rights reserved.<br />
+
+		
+				
+				
+			
+				<a href="http://www.nanaimo.ca/EN/main/want/view/legal-disclaimer.html" title="Legal Disclaimer">Legal Disclaimer</a>,  
+			
+				<a href="http://www.nanaimo.ca/EN/main/want/view/privacy-policy.html" title="Privacy Policy">Privacy Policy</a>
+			
+
+		</p>
+		
+		
+		
+		<p id="footer-style-switch">
+			<!-- changed for mobile version 
+			Screen version | <a href="http://www.nanaimo.ca/EN/main/departments/Fire-Rescue/enotify.master?media=mobile" class="switch" title="Mobile style sheet">Mobile</a>
+			-->
+		</p>
+		
+	
+		<p id="feedback"><strong>Please send feedback or comments regarding this website to: <a href="mailto:webmaster@nanaimo.ca" title="Email your feedback">webmaster@nanaimo.ca</a></strong></p>
+	</div>
+	
+	<div class="col" id="footer-2">
+
+		<p class="vcard" id="address">
+				<a href="http://www.nanaimo.ca/EN/main/municipal.html" class="url fn org">Nanaimo City Hall</a>
+			 is located at:<br /> <span class="adr"> <span class="street-address">455 Wallace Street</span><br /> <span class="locality">Nanaimo</span>, <span class="region">BC</span> <span class="postal-code">V9R 5J6</span></span><br />
+
+		<!-- for mobile version -->
+		<a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=455+Wallace+Street,+Nanaimo,+BC+V9R+5J6&amp;jsv=107&amp;sll=37.0625,-95.677068&amp;sspn=41.360684,62.753906&amp;ie=UTF8&amp;z=16&amp;iwloc=addr" onclick="window.open('http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=455+Wallace+Street,+Nanaimo,+BC+V9R+5J6&amp;jsv=107&amp;sll=37.0625,-95.677068&amp;sspn=41.360684,62.753906&amp;ie=UTF8&amp;z=16&amp;iwloc=addr'); return false;" title="Get Directions from Google Maps">Get Directions</a>
+
+		<br /><br />
+		<span class="tel"><strong>Telephone:</strong><br />
+		250-754-4251</span>
+
+		</p>
+
+		<p id="hours"><strong>Hours of business:</strong><br />
+		8:30am to 4:30pm Monday to Friday</p>
+	</div>
+	
+	<a href="#top" id="top-link">Top</a>
+	
+	</div>
+	<div class="clear"></div>
+</div> <!-- close FOOTER -->
+
+<!--ZOOMRESTART-->
+
+<!-- Removed highlight for mobile version -->
+
+
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-2871238-1");
+        pageTracker._trackPageview();
+    } catch (err) { }</script>
+<!-- End Footer -->
+
+</body>
+</html>

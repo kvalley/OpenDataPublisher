@@ -1,0 +1,3 @@
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\GenericParsing\bin\Release\GenericParsing.dll
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\GenericParsing\bin\Release\GenericParser.xml
+C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\GenericParsing\obj\Release\GenericParsing.dll

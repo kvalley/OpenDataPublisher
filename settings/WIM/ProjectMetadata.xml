@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectMetadataInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectName>ogdi</ProjectName>
+  <DefaultIterationLength>14</DefaultIterationLength>
+  <ProjectStart>2010-02-08T00:00:00-05:00</ProjectStart>
+  <IterationList>
+    <IterationMetadataInfo>
+      <Id>12068</Id>
+      <Name>Initial check in</Name>
+      <Path>ogdi\Initial check in</Path>
+      <StartDate>2010-01-25T00:00:00-05:00</StartDate>
+      <EndDate>2010-02-07T00:00:00-05:00</EndDate>
+      <Level>0</Level>
+      <PredecessorId xsi:nil="true" />
+      <ParentId>12007</ParentId>
+      <DurationDays>14</DurationDays>
+    </IterationMetadataInfo>
+    <IterationMetadataInfo>
+      <Id>12095</Id>
+      <Name>Initial release</Name>
+      <Path>ogdi\Initial release</Path>
+      <StartDate>2010-01-25T00:00:00-05:00</StartDate>
+      <EndDate>2010-02-07T00:00:00-05:00</EndDate>
+      <Level>0</Level>
+      <PredecessorId xsi:nil="true" />
+      <ParentId>12007</ParentId>
+      <DurationDays>14</DurationDays>
+    </IterationMetadataInfo>
+    <IterationMetadataInfo>
+      <Id>15929</Id>
+      <Name>vNext</Name>
+      <Path>ogdi\vNext</Path>
+      <StartDate>2010-02-08T00:00:00-05:00</StartDate>
+      <EndDate>2010-02-21T00:00:00-05:00</EndDate>
+      <Level>0</Level>
+      <PredecessorId xsi:nil="true" />
+      <ParentId>12007</ParentId>
+      <DurationDays>14</DurationDays>
+    </IterationMetadataInfo>
+  </IterationList>
+</ProjectMetadataInfo>
