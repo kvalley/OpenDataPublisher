@@ -10,3 +10,15 @@ C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Int
 C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\WindowsAzureStorage\obj\Debug\WindowsAzureStorage.csproj.GenerateResource.Cache
 C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\WindowsAzureStorage\obj\Debug\WindowsAzureStorageProvider.dll
 C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Interactive Sdk_Mvc\WindowsAzureStorage\obj\Debug\WindowsAzureStorageProvider.pdb
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Interactive Sdk_Mvc\WindowsAzureStorage\bin\Debug\WindowsAzureStorageProvider.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Interactive Sdk_Mvc\WindowsAzureStorage\bin\Debug\WindowsAzureStorageProvider.pdb
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Interactive Sdk_Mvc\WindowsAzureStorage\bin\Debug\WindowsAzureStorageProvider.dll.CodeAnalysisLog.xml
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Interactive Sdk_Mvc\WindowsAzureStorage\bin\Debug\WindowsAzureStorageProvider.dll.lastcodeanalysissucceeded
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Interactive Sdk_Mvc\WindowsAzureStorage\bin\Debug\DTBookTranslation.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Interactive Sdk_Mvc\WindowsAzureStorage\bin\Debug\WindowsBase.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Interactive Sdk_Mvc\WindowsAzureStorage\bin\Debug\DTBookTranslation.pdb
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Interactive Sdk_Mvc\WindowsAzureStorage\obj\Debug\WindowsAzureStorage.csprojResolveAssemblyReference.cache
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Interactive Sdk_Mvc\WindowsAzureStorage\obj\Debug\Odp.InteractiveSdk.Mvc.AzureResources.resources
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Interactive Sdk_Mvc\WindowsAzureStorage\obj\Debug\WindowsAzureStorage.csproj.GenerateResource.Cache
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Interactive Sdk_Mvc\WindowsAzureStorage\obj\Debug\WindowsAzureStorageProvider.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Interactive Sdk_Mvc\WindowsAzureStorage\obj\Debug\WindowsAzureStorageProvider.pdb

@@ -12,3 +12,17 @@ C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Dat
 C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\bin\x86\Release\Newtonsoft.Json.xml
 C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\obj\x86\Release\Odp.DataServices.dll
 C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Data Services\Services_WebRole\obj\x86\Release\Odp.DataServices.pdb
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\bin\x86\Release\Odp.DataServices.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\bin\x86\Release\Odp.DataServices.pdb
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\bin\x86\Release\Odp.DataServices.dll.CodeAnalysisLog.xml
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\bin\x86\Release\Odp.DataServices.dll.lastcodeanalysissucceeded
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\bin\x86\Release\CSharpFormat.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\bin\x86\Release\Newtonsoft.Json.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\bin\x86\Release\Odp.Data.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\bin\x86\Release\System.Web.Abstractions.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\bin\x86\Release\Odp.Data.pdb
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\bin\x86\Release\CSharpFormat.xml
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\bin\x86\Release\Newtonsoft.Json.xml
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\obj\x86\Release\Services_WebRole.csprojResolveAssemblyReference.cache
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\obj\x86\Release\Odp.DataServices.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Data Services\Services_WebRole\obj\x86\Release\Odp.DataServices.pdb

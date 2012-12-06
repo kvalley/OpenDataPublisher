@@ -4,3 +4,9 @@ C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Gen
 C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\GenericParsing\obj\Debug\GenericParsing.dll
 C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\GenericParsing\obj\Debug\GenericParsing.pdb
 C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\GenericParsing\obj\Debug\GenericParsing.csprojResolveAssemblyReference.cache
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\GenericParsing\bin\Debug\GenericParsing.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\GenericParsing\bin\Debug\GenericParsing.pdb
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\GenericParsing\bin\Debug\GenericParser.xml
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\GenericParsing\obj\Debug\GenericParsing.csprojResolveAssemblyReference.cache
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\GenericParsing\obj\Debug\GenericParsing.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\GenericParsing\obj\Debug\GenericParsing.pdb

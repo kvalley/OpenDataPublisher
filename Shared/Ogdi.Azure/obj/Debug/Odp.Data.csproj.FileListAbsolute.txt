@@ -3,3 +3,8 @@ C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Sha
 C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Shared\Ogdi.Azure\obj\Debug\Odp.Data.dll
 C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Shared\Ogdi.Azure\obj\Debug\Odp.Data.pdb
 C:\Users\cmcluckie\Documents\Visual Studio 2010\Projects\Open Data Publisher\Shared\Ogdi.Azure\obj\Debug\Odp.Data.csprojResolveAssemblyReference.cache
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Shared\Ogdi.Azure\bin\Debug\Odp.Data.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Shared\Ogdi.Azure\bin\Debug\Odp.Data.pdb
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Shared\Ogdi.Azure\obj\Debug\Odp.Data.csprojResolveAssemblyReference.cache
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Shared\Ogdi.Azure\obj\Debug\Odp.Data.dll
+C:\Users\kvalley\Documents\GitHub\OpenDataPublisher\Shared\Ogdi.Azure\obj\Debug\Odp.Data.pdb
